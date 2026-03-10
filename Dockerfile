@@ -16,6 +16,10 @@ ARG LAUNCHER=default
 # define base image
 FROM duckietown/${BASE_IMAGE}:${BASE_TAG} as BASE
 
+# Fix expired ROS key
+RUN apt-key del F42ED6FBAB17C654 || true
+RUN apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
 # recall all arguments
 ARG ARCH
 ARG DISTRO
