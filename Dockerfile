@@ -1,4 +1,4 @@
-[# parameters
+# parameters
 ARG REPO_NAME="group6_Session3"
 ARG DESCRIPTION="Base class repo for UML EECE 5560"
 ARG MAINTAINER="Nirmal Hitesh (nirobinan@gmail.com)"
