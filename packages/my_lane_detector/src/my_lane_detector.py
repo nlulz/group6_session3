@@ -60,7 +60,7 @@ class Lane_Detector:
 
         # The starter file flips the image. Keep this if your output appears correctly.
         # If your output looks upside down, comment this line out and test again.
-        img = cv2.flip(img, 0)
+        #img = cv2.flip(img, 0)
 
         height, width, channels = img.shape
 
