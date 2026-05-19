@@ -58,8 +58,7 @@ class Lane_Detector:
         # Convert ROS compressed image message to OpenCV BGR image
         img = self.cv_bridge.compressed_imgmsg_to_cv2(msg, "bgr8")
 
-        # The starter file flips the image. Keep this if your output appears correctly.
-        # If your output looks upside down, comment this line out and test again.
+        # to convert upside down, comment this line out and test again.
         #img = cv2.flip(img, 0)
 
         height, width, channels = img.shape
